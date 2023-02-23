@@ -1,1 +1,13 @@
 /* this css will be linked to index.html */
+.closed{
+    display: none;
+}
+
+.open{
+    display: block;
+}
+
+button{
+    width: 150px;
+    background-color: #00ccee;
+}
