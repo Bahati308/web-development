@@ -3,10 +3,10 @@ function closeMe() {
     // find the element
      x=document.getElementById("demo");
     // option 1: change the style attribute directly
-    //  x.style.display="none";
+    x.style.display="none";
 
     // option 2:
-     x.className="closed";
+     x.className="closed";// dont know why this is not working
     
 }
 
@@ -17,5 +17,5 @@ function openMe() {
      x.style.display ="block";
 
     // Option 2:
-    x.className ="open";
+    x.className ="open";//dont know why this is not working
 }
