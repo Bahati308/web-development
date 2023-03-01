@@ -4,5 +4,6 @@ function localfruits(params) {
 }
 
 function myFunction(){
+    var fruit = prompt('what is your favourite fruit?');
     
 }
