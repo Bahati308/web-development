@@ -1,5 +1,5 @@
 var fruits =['banana', 'mango', 'avocado', 'apple']
-function localfruits(params) {
+function loadfruits(params) {
     document.getElementById('fruits').innerHTML=fruits;
 }
 
