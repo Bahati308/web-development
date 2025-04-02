@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EazyMonitor - Gas Station Monitoring</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-gas-pump"></i>
+                <h1>EazyMonitor</h1>
+            </div>
+            <div class="user-info">
+                <span>Welcome, Station Manager</span>
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Fuel Levels</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Sales Analytics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-bell"></i>
+                                <span>Alerts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Status Cards -->
+                <div class="status-cards">
+                    <div class="card">
+                        <div class="card-icon bg-blue">
+                            <i class="fas fa-gas-pump"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Fuel Inventory</h3>
+                            <p>12,500 Liters</p>
+                            <span class="status-text">75% Capacity</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon bg-green">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Today's Sales</h3>
+                            <p>$8,742</p>
+                            <span class="status-text">+12% from yesterday</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon bg-orange">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Transactions</h3>
+                            <p>247</p>
+                            <span class="status-text">32/hr average</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon bg-red">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Alerts</h3>
+                            <p>2 Active</p>
+                            <span class="status-text">Needs attention</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fuel Tank Monitoring -->
+                <div class="section">
+                    <h2 class="section-title">Fuel Tank Levels</h2>
+                    <div class="tank-container">
+                        <div class="tank">
+                            <div class="tank-label">Regular (87)</div>
+                            <div class="tank-gauge">
+                                <div class="tank-level" style="height: 68%; background-color: #4CAF50;"></div>
+                            </div>
+                            <div class="tank-value">68%</div>
+                        </div>
+                        <div class="tank">
+                            <div class="tank-label">Plus (89)</div>
+                            <div class="tank-gauge">
+                                <div class="tank-level" style="height: 45%; background-color: #2196F3;"></div>
+                            </div>
+                            <div class="tank-value">45%</div>
+                        </div>
+                        <div class="tank">
+                            <div class="tank-label">Premium (91)</div>
+                            <div class="tank-gauge">
+                                <div class="tank-level" style="height: 32%; background-color: #FF9800;"></div>
+                            </div>
+                            <div class="tank-value">32%</div>
+                        </div>
+                        <div class="tank">
+                            <div class="tank-label">Diesel</div>
+                            <div class="tank-gauge">
+                                <div class="tank-level" style="height: 82%; background-color: #9E9E9E;"></div>
+                            </div>
+                            <div class="tank-value">82%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Transactions -->
+                <div class="section">
+                    <h2 class="section-title">Recent Transactions</h2>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Pump</th>
+                                    <th>Fuel Type</th>
+                                    <th>Amount</th>
+                                    <th>Payment</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10:42 AM</td>
+                                    <td>Pump 3</td>
+                                    <td>Regular (87)</td>
+                                    <td>$45.20</td>
+                                    <td>Credit</td>
+                                    <td><span class="status completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10:38 AM</td>
+                                    <td>Pump 1</td>
+                                    <td>Premium (91)</td>
+                                    <td>$62.75</td>
+                                    <td>Debit</td>
+                                    <td><span class="status completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10:35 AM</td>
+                                    <td>Pump 4</td>
+                                    <td>Diesel</td>
+                                    <td>$78.30</td>
+                                    <td>Cash</td>
+                                    <td><span class="status completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10:30 AM</td>
+                                    <td>Pump 2</td>
+                                    <td>Plus (89)</td>
+                                    <td>$53.15</td>
+                                    <td>Credit</td>
+                                    <td><span class="status completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10:25 AM</td>
+                                    <td>Pump 5</td>
+                                    <td>Regular (87)</td>
+                                    <td>$34.90</td>
+                                    <td>Mobile Pay</td>
+                                    <td><span class="status in-progress">In Progress</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Alerts Section -->
+                <div class="section">
+                    <h2 class="section-title">Active Alerts</h2>
+                    <div class="alerts-container">
+                        <div class="alert critical">
+                            <div class="alert-icon">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <div class="alert-content">
+                                <h3>Low Fuel Level - Premium (91)</h3>
+                                <p>Tank level below 35%. Consider ordering more fuel.</p>
+                                <span class="alert-time">10 minutes ago</span>
+                            </div>
+                            <button class="alert-action">Acknowledge</button>
+                        </div>
+                        <div class="alert warning">
+                            <div class="alert-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="alert-content">
+                                <h3>Pump 3 Maintenance Due</h3>
+                                <p>Pump 3 has reached 90% of its maintenance interval.</p>
+                                <span class="alert-time">1 hour ago</span>
+                            </div>
+                            <button class="alert-action">Schedule</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
